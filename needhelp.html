@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Need Help</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-image: url(assests/img3.png); background-size: 125%">
+    <div class="menu-container">
+      <!-- Special Dishes Category -->
+      <div class="category">
+        <h2>Special Offer</h2>
+        <div class="item-container">
+          <div class="menu-item">
+            <img src="assests/a1.jpg" alt="Special Dish 1" />
+            <div class="item-details">
+              <p>Biriyani</p>
+              <p>Price: ₹250</p>
+              <p>Protein: 15g</p>
+              <p>Fat: 20g</p>
+              <p>Calories: 450</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Biriyani', 250)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="assests/a2.jpg" alt="Special Dish 1" />
+            <div class="item-details">
+              <p>Chicken Wings</p>
+              <p>Price: ₹150</p>
+              <p>Protein: 20g</p>
+              <p>Fat: 10g</p>
+              <p>Calories: 250</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Chicken Wings', 150)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="assests/a3.jpg" alt="Special Dish 1" />
+            <div class="item-details">
+              <p>Chicken Tikka</p>
+              <p>Price: ₹200</p>
+              <p>Protein: 20g</p>
+              <p>Fat: 10g</p>
+              <p>Calories: 250</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Chicken Tikka', 200)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Repeat for other items -->
+        </div>
+      </div>
+
+      <!-- Combo Offers Category -->
+      <div class="category">
+        <h2>Top List</h2>
+        <div class="item-container">
+          <div class="menu-item">
+            <img src="assests/b1.jpg" alt="Combo Offer 1" />
+            <div class="item-details">
+              <p>Shahi Panner</p>
+              <p>Price: ₹130</p>
+              <p>Protein: 20g</p>
+              <p>Fat: 18g</p>
+              <p>Calories: 300</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Shahi Panner', 130)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="assests/b2.jpg" alt="Combo Offer 1" />
+            <div class="item-details">
+              <p>Hakka Noodles</p>
+              <p>Price: ₹200</p>
+              <p>Protein: 8g</p>
+              <p>Fat: 8g</p>
+              <p>Calories: 200</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Hakka Noodles', 200)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="assests/b3.jpg" alt="Combo Offer 1" />
+            <div class="item-details">
+              <p>Panner Masala</p>
+              <p>Price: ₹200</p>
+              <p>Protein: 8g</p>
+              <p>Fat: 8g</p>
+              <p>Calories: 200</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Panner Masala', 200)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Repeat for other items -->
+        </div>
+      </div>
+
+      <!-- Popular Dishes Category -->
+      <div class="category">
+        <h2>Popular Dishes</h2>
+        <div class="item-container">
+          <div class="menu-item">
+            <img src="assests/c1.jpg" alt="Popular Dish 1" />
+            <div class="item-details">
+              <p>Pizza</p>
+              <p>Price: ₹249</p>
+              <p>Protein: 15g</p>
+              <p>Fat: 15g</p>
+              <p>Calories: 250</p>
+              <button class="add-to-cart-btn" onclick="addToCart('Pizza', 249)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="assests/c2.jpg" alt="Popular Dish 1" />
+            <div class="item-details">
+              <p>Burger</p>
+              <p>Price: ₹199</p>
+              <p>Protein: 30g</p>
+              <p>Fat: 15g</p>
+              <p>Calories: 300</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Burger', 199)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="assests/c3.jpg" alt="Popular Dish 1" />
+            <div class="item-details">
+              <p>Spaghetti</p>
+              <p>Price: ₹299</p>
+              <p>Protein: 2og</p>
+              <p>Fat: 10g</p>
+              <p>Calories: 300</p>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Spaghetti', 299)"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Repeat for other items -->
+        </div>
+      </div>
+    </div>
+
+    <button class="order-btn" onclick="viewOrder()">Order</button>
+    <button class="back-btn" onclick="showMenuOptions()">Back</button>
+    <script src="java.js"></script>
+  </body>
+</html>
